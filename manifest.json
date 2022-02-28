@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "AutoSign",
+	"short_name": "AutoSign",
+	"version": "0.1",
+	"description": "每日自动健康打卡",
+	"browser_action": {
+		"default_popup": "popup.htm",
+		"default_title": "自动打卡"
+	},
+	"background": {
+		"page": "background.htm",
+		"persistent": true
+	},
+	"options_page": "options.htm",
+	"options_ui": {
+		"page": "options.htm",
+		"open_in_tab": true
+	},
+	"permissions": [
+		"cookies",
+		"webNavigation",
+		"webRequest",
+		"webRequestBlocking",
+		"<all_urls>"
+	],
+	"content_scripts": [],
+	"web_accessible_resources": ["*"]
+}
